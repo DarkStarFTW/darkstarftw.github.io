@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simulate Bets with Lossback</title>
+</head>  
+<body>
+    <div id="inputs">
+        <form>
+            <label for="fname">Multiplier:</label>
+            <input type="text" id="multiplier" name="multiplier" value="2.01"><br>
+
+            <label for="fname">Win Chance:</label>
+            <input type="text" id="winprob" name="winprob" value="49"><br>
+
+            <label for="fname">Lossback:</label>
+            <input type="text" id="lossback" name="lossback" value="16"><br>
+
+            <label for="fname">Bet Count:</label>
+            <input type="text" id="count" name="count" value="30"><br>
+
+            <label for="fname">Trials:</label>
+            <input type="text" id="trials" name="trials" value="10000"><br>
+
+            <button type="button" onclick="calculate()">Calculate</button> 
+        </form>
+    </div>
+    <div id="output"> 
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
