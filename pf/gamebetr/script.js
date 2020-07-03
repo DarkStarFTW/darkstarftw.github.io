@@ -6,6 +6,10 @@ document.getElementById("serverSeedHash").value = urlParams.get('serverSeedHash'
 document.getElementById("serverSeed").value = urlParams.get('serverSeed');
 document.getElementById("clientSeed").value = urlParams.get('clientSeed');
 
+if (urlParams.get('serverSeedHash') && urlParams.get('serverSeed') && urlParams.get('clientSeed')) {
+    verify();
+}
+
 function verify() {
     let serverSeedHash = document.getElementById("serverSeedHash").value;
     let serverSeed = document.getElementById("serverSeed").value;
